@@ -1,9 +1,3 @@
-// makeUniqueSelection,
-// pickWinner,
-// isCorrect,
-// gameLost,
-// nextLevel,
-
 const COUNTRIES_LEN = 249;
 const SELECTION_LEN = 4;
 const NUM_OF_TURNS = 10;
@@ -38,5 +32,21 @@ export const makeUniqueSelection = () => {
   }
   finalSelection = selectionIndeces;
   return finalSelection;
-}
+};
 
+export const pickWinner = (arr) => {
+  const randIdx = getRandInt(SELECTION_LEN);
+  return arr[randIdx];
+};
+
+export const isCorrect = (value1, value2) => {
+  return value1 === value2;
+};
+
+export const gameLost = (mistakes) => {
+  return mistakes === 0;
+};
+
+export const nextLevel = (turn) => {
+  return turn === NUM_OF_TURNS;
+};
