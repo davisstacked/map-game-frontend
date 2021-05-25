@@ -1,7 +1,8 @@
 import React from "react";
 import GameContextProvider from "./Context/GameContextProvider";
 import SoundContextProvider from "./Context/SoundContextProvider";
-import { BrowserRouter } from "react-router-dom";
+import Footer from "./Components/Common/Footer";
+// import { BrowserRouter } from "react-router-dom";
 
 import './App.css';
 
@@ -10,9 +11,10 @@ function App() {
     <div className="App">
       <GameContextProvider>
         <SoundContextProvider>
-          <BrowserRouter>
+          {/* <BrowserRouter>
             <h1>Hi</h1>
-          </BrowserRouter>
+          </BrowserRouter> */}
+          <Footer />
         </SoundContextProvider>
       </GameContextProvider>
     </div>
