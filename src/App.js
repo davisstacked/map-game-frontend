@@ -1,7 +1,7 @@
 import React from "react";
 import GameContextProvider from "./Context/GameContextProvider";
 import SoundContextProvider from "./Context/SoundContextProvider";
-import Timer from "./Components/Game/Common/Timer";
+import FlagLevel from "./Components/Game/FlagLevel/FlagLevel";
 // import { BrowserRouter } from "react-router-dom";
 
 import './App.css';
@@ -14,7 +14,7 @@ function App() {
           {/* <BrowserRouter>
             <h1>Hi</h1>
           </BrowserRouter> */}
-          <Timer />
+          <FlagLevel />
         </SoundContextProvider>
       </GameContextProvider>
     </div>
